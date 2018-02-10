@@ -6,4 +6,7 @@
   <ItemGroup>
     <PackageReference Include="TweetinviAPI" Version="2.1.0" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\BapesTwitterBot.Domain\BapesTwitterBot.Domain.csproj" />
+  </ItemGroup>
 </Project>
