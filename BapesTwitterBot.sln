@@ -7,6 +7,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BapesTwitterBot.Console", "
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BapesTwitterBot.Domain", "src\BapesTwitterBot.Domain\BapesTwitterBot.Domain.csproj", "{45F2FABA-DEE7-423D-9E3C-9ED67206BF9C}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BapesTwitterBot.Service", "src\BapesTwitterBot.Service\BapesTwitterBot.Service.csproj", "{901D4B43-DF3A-4BD5-AD42-9D299753D35D}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,14 @@ Global
 		{45F2FABA-DEE7-423D-9E3C-9ED67206BF9C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{45F2FABA-DEE7-423D-9E3C-9ED67206BF9C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{45F2FABA-DEE7-423D-9E3C-9ED67206BF9C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{80AD0366-94B3-4648-A6B7-5C0F7DACCC95}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{80AD0366-94B3-4648-A6B7-5C0F7DACCC95}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{80AD0366-94B3-4648-A6B7-5C0F7DACCC95}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{80AD0366-94B3-4648-A6B7-5C0F7DACCC95}.Release|Any CPU.Build.0 = Release|Any CPU
+		{901D4B43-DF3A-4BD5-AD42-9D299753D35D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{901D4B43-DF3A-4BD5-AD42-9D299753D35D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{901D4B43-DF3A-4BD5-AD42-9D299753D35D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{901D4B43-DF3A-4BD5-AD42-9D299753D35D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
