@@ -1,4 +1,5 @@
 ﻿﻿using System;
+ using System.Threading;
 
 namespace BapesTwitterBot.Console
 {
@@ -6,9 +7,11 @@ namespace BapesTwitterBot.Console
     {
         private static void Main(string[] args)
         {
-            System.Console.WriteLine("Hello World!");
-
-            System.Console.ReadLine();
+            while (true)
+            {
+                System.Console.WriteLine("Hello World!");
+                Thread.Sleep(1000);
+            }
         }
     }
 }
