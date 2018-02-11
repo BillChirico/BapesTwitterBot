@@ -1,6 +1,4 @@
-﻿
- using System;
- using BapesTwitterBot.Domain;
+﻿ using BapesTwitterBot.Domain;
  using BapesTwitterBot.Service;
 
 namespace BapesTwitterBot.Console
