@@ -9,18 +9,15 @@ namespace BapesTwitterBot.Service
 {
     public class TwitterAuthService
     {
-        private const string ConsumerKey = "";
-        private const string ConsumerSecret = "";
-
         private readonly BapesTwitterBotContext _context;
-
         private readonly IAuthenticationContext _authenticationContext;
 
-        public TwitterAuthService(BapesTwitterBotContext context)
+        public TwitterAuthService(BapesTwitterBotContext context, TwitterAppSettings appSettings)
         {
             _context = context;
+            var appSettings1 = appSettings;
 
-            var appCredentials = new TwitterCredentials(ConsumerKey, ConsumerSecret);
+            var appCredentials = new TwitterCredentials(appSettings1.Key, appSettings1.Secret);
 
             _authenticationContext = AuthFlow.InitAuthentication(appCredentials);
         }

@@ -6,23 +6,22 @@ namespace BapesTwitterBot.Service
 {
     public class TwitterService
     {
-        private const string ConsumerKey = "";
-        private const string ConsumerSecret = "";
-
         private readonly BapesTwitterBotContext _context;
         private readonly TwitterUser _user;
+        private readonly TwitterAppSettings _appSettings;
 
-        public TwitterService(BapesTwitterBotContext context, TwitterUser user)
+        public TwitterService(BapesTwitterBotContext context, TwitterUser user, TwitterAppSettings appSettings)
         {
             _context = context;
             _user = user;
+            _appSettings = appSettings;
 
             Login();
         }
 
         private void Login()
         {
-            Auth.SetUserCredentials(ConsumerKey, ConsumerSecret, _user.AccessToken, _user.AccessTokenSecret);
+            Auth.SetUserCredentials(_appSettings.Key, _appSettings.Secret, _user.AccessToken, _user.AccessTokenSecret);
         }
     }
 }

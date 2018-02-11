@@ -4,9 +4,9 @@ using System.Text;
 
 namespace BapesTwitterBot.Domain.Models
 {
-    public class TwitterAppKeys
+    public class TwitterAppSettings
     {
-        public TwitterAppKeys(string key, string secret)
+        public TwitterAppSettings(string key, string secret)
         {
             Key = key;
             Secret = secret;
