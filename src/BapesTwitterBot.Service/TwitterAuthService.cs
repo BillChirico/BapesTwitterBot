@@ -15,9 +15,8 @@ namespace BapesTwitterBot.Service
         public TwitterAuthService(BapesTwitterBotContext context, TwitterAppSettings appSettings)
         {
             _context = context;
-            var appSettings1 = appSettings;
 
-            var appCredentials = new TwitterCredentials(appSettings1.Key, appSettings1.Secret);
+            var appCredentials = new TwitterCredentials(appSettings.Key, appSettings.Secret);
 
             _authenticationContext = AuthFlow.InitAuthentication(appCredentials);
         }
